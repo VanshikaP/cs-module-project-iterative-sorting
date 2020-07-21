@@ -20,7 +20,7 @@ def binary_search(arr, target):
     endIndex = len(arr) - 1
 
     while startIndex < endIndex:
-        middleIndex = int((endIndex - startIndex) / 2)
+        middleIndex = (endIndex + startIndex) // 2
         if target is arr[middleIndex]:
             return middleIndex
         elif target < arr[middleIndex]:
